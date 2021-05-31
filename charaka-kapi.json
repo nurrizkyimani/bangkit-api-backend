@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "charaka",
+  "private_key_id": "9bd54a2d4ad3272d6b3d0120dbe9bdca1d4dfa2b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCkqIN4nprakxrF\npJZE3EWTK2i6WP9NpxFn/8zSWg5Y1PKlNhEA6l0efbSPb/cHHUzDy/1hLD1/7+e9\nN8fZoXTBx4+sAX/MwX7MqB2eAu2Qv229X6YcKaf74vq+JuK3oMCvzNL5uEpvF18E\nSDbSEHiBKptd16XzhGp4lg+rNuiRvbScwjZsmGHtaj1L4tPpA5RR3LqUCApc6HFq\nU9wPLIuvrPJSa6GCXfrZuvThpCAQatoz7kRlGwaX0+NZ2lmBdZsEo5/eZKh2khSx\nSsCbyZ3BanOwfoP2srE5tMvAH2hi7+gz9xBcyKUj+Xj+t64/EhPmZu/P915lkPsB\nsIBk02r7AgMBAAECggEABQUNBzv0Xu5EJII+ndvNd9vyF62V5ghqrXxCSaeeaD2n\n7Sx1npPqEA2gO37/f2xN+BUCrBgZWBijLna7CprW+XEmaqINu/eqYhqFSKBNAMWC\nj6w7pjklU2E9BOYEBw8zztZw33G5rk2pQ0hvMvd2zQKbrkdudqyrtLlLUDb7Cf0C\nkDS4hXT6WJPDJTw6mMqumeQdT4Pd0YxtKKOghEI1l70j4HweAPU8YdeU5VT00dqy\nCok/s/x6qA4v4fmOeWnf0r8zF+pDvdD1KSQCiUsAERt6Knw5APAcaxhbsvAcSU0m\nN8kP6F0a49R3dyu2Cj6AYm2KkWYg8zOD0mDBpSlKGQKBgQDnzVjS9ovuYaHa82Ue\nmaASqWSjg8KV2mnqbCM1rU6r6lazG1TqodOChY4WdYLTes8yfjzgUXC44m3b2atV\nZpKubj+pGyWDv56JbwiyYNuQb7UTpk/IywjWI09IJo6QYr70l5ALxdcKZv6nBckG\nPP9vZX9JLBNvMC4fXsVWFaTniQKBgQC12NJI9wU5EXXGVqnZik7KlYjxKaWsw2lQ\n+h4Fu+oQzyiyDhSJn20pn+YLq8t9Ct4wsg+btnnWVdNDKwFWJECX+9FqfIsTtJrv\nzukYZGA09HyvQFbuKR8r8qBo6usRznotKFYO9qu2MffXqext/6eD3+VETLbZ9eFK\n4fav4gWZYwKBgQCW7e3X7xBNtuRcW/6LXhwMCp+smC4qxHwSVzbVzHJdHcg19qXj\n4FqHsc5CcWEtsdkXV3rr1BtBRq2haKlWgeMgEEkDItnaXvorIlDXVJmiAho1ISTx\n6MFoLLWClRheiu0q9USlZbwO2eEVf37UwQLQ1ZV7X2eIDib55gs3cgBdgQKBgQCw\njM284XdErNr3sXQ+LLXKodvOqGydiytY3zz+vC7IGxibpmfyJcLKQuAKPMTXphGK\nnZXhzAwGOFVgRQSLKa8839O12yz7+MDkSrKsZ+ewAh5716+OkoYdGPb8ZffL1fdw\nmFTVOlAEGAdUbzmIokl1E493/DMa8knFdhUXNg3RmQKBgBnELEGzJYHoTKaSGTfk\n6eQLNVtU7gWAgf2C4HHmUS2N2QYVf8iuwb9OBW+6u84sxQNsIx+GidpGR88m0gCI\nPN/c6LwClCU0SG5iYvtDm/9US/Z1v3OqcV/tlplnP3O6jyC4sLJhxu7gaFrz0nMx\nMPnS+GuzIlMP6TxNXnW8SVlB\n-----END PRIVATE KEY-----\n",
+  "client_email": "charaka-firebase@charaka.iam.gserviceaccount.com",
+  "client_id": "115991027677180506067",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/charaka-firebase%40charaka.iam.gserviceaccount.com"
+}
