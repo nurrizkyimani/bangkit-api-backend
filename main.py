@@ -16,7 +16,6 @@ firebase_admin.initialize_app(cred, {
 })
 db = firestore.client()
 
-
 class Feed(BaseModel):
   title: str
   desc: Optional[str] = None
@@ -46,7 +45,6 @@ def get_feed_all_firebase():
 #feed api; 
 @app.post("/feeds")
 def post_feed_firebase(feed: Feed):
-  
   data = {
     u'title': feed.title,
     u'book':  feed.book,
@@ -57,9 +55,19 @@ def post_feed_firebase(feed: Feed):
 
   return {"code": 202 , "data": feed }
 
+@app.get("/feeds")
+def get_feed_firebase():
+  docs = db.collection(u'newsfeed').stream()
+  lis = []
+  for doc in docs:
+    print(doc)
+    lis.append({ "id": doc.id, "doc" : doc.to_dict() })
+  return lis
+
 @app.get("/feeds/{feed_id}")
 def get_feed_firebase(feed_id: int):
-  return { "book_id": feed_id, "desc" : [{"title": "goodbook"}, {"title": "not that good book"}]}
+  return { "feed_id": feed_id, "desc" : [{"title": "goodbook"}, {"title": "not that good book"}]}
+
 
 #prediction api
 @app.get("/predictions/{book_id}")
