@@ -1,6 +1,6 @@
 fastapi
 uvicorn
 firebase-admin
-flask
+flask<2.0.0
 python-decouple
 

@@ -6,8 +6,18 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 from typing import Optional
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+origins = ["*"]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 cred = credentials.ApplicationDefault()
 # cred = credentials.Certificate('charaka-kapi.json')
