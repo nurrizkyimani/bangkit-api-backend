@@ -51,10 +51,35 @@ def main_func():
 #   return {"user_id": user_id, "docs": docs }
 
 # # book api; non firebase
-# @app.get("/books/25663888")
-# def get_book_database():
-#   docs = db.collection(u'books').where(u'book_id', u'==', u'25663888').get()
-#   return {"book_id": '25663888', "doc": docs}
+@app.get("/books/25663888")
+def get_book_database():
+
+  docs = {
+      "id": 1,
+      "book_id": 2767052,
+      "best_book_id": 2767052,
+      "work_id": 2792775,
+      "books_count": 272,
+      "isbn": "439023483",
+      "isbn13": 9780439023480,
+      "authors": "Suzanne Collins",
+      "original_publication_year": 2008,
+      "original_title": "The Hunger Games",
+      "title": "The Hunger Games (The Hunger Games, #1)",
+      "language_code": "eng",
+      "average_rating": 4.34,
+      "ratings_count": 4780653,
+      "work_ratings_count": 4942365,
+      "work_text_reviews_count": 155254,
+      "ratings_1": 66715,
+      "ratings_2": 127936,
+      "ratings_3": 560092,
+      "ratings_4": 1481305,
+      "ratings_5": 2706317,
+      "image_url": "https://images.gr-assets.com/books/1447303603m/2767052.jpg",
+      "small_image_url": "https://images.gr-assets.com/books/1447303603s/2767052.jpg"
+  },
+  return {"book_id": '25663888', "doc": docs}
 
 
 @app.get("/books")
@@ -110,31 +135,6 @@ def get_feed_firebase():
   # bookdoc = db.collection(u'books').where(u'book_id', u'==', u'25663888').get()
   # bookdoc = bookdoc[0]
 
-  docs = {
-      "id": 1,
-      "book_id": 2767052,
-      "best_book_id": 2767052,
-      "work_id": 2792775,
-      "books_count": 272,
-      "isbn": "439023483",
-      "isbn13": 9780439023480,
-      "authors": "Suzanne Collins",
-      "original_publication_year": 2008,
-      "original_title": "The Hunger Games",
-      "title": "The Hunger Games (The Hunger Games, #1)",
-      "language_code": "eng",
-      "average_rating": 4.34,
-      "ratings_count": 4780653,
-      "work_ratings_count": 4942365,
-      "work_text_reviews_count": 155254,
-      "ratings_1": 66715,
-      "ratings_2": 127936,
-      "ratings_3": 560092,
-      "ratings_4": 1481305,
-      "ratings_5": 2706317,
-      "image_url": "https://images.gr-assets.com/books/1447303603m/2767052.jpg",
-      "small_image_url": "https://images.gr-assets.com/books/1447303603s/2767052.jpg"
-  },
 
   return {
     "status": 200,
