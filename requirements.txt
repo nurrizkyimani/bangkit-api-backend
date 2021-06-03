@@ -3,4 +3,6 @@ uvicorn
 firebase-admin
 flask<2.0.0
 python-decouple
-
+pandas
+tensorflow
+pydantic
