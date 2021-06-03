@@ -13,9 +13,7 @@ import pandas as pd
 
 app = FastAPI()
 
-origins = ["*",
-           "https://us-central1-charaka.cloudfunctions.net/"
-           ]
+origins = ["*"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -50,7 +48,7 @@ def main_func():
 #   docs = db.collection(u'users').document(user_id).get()
 #   return {"user_id": user_id, "docs": docs }
 
-# # book api; non firebase
+# book api; non firebase
 @app.get("/books/2767052")
 def get_book_database():
   docs = {
@@ -94,7 +92,7 @@ def get_feed_all_firebase():
 
   return {"status": 200, "docs": lit}
 
-# # feed api; done
+# # # feed api; done
 
 @app.post("/feeds")
 def post_feed_firebase(feed: Feed):
@@ -104,7 +102,7 @@ def post_feed_firebase(feed: Feed):
         u'user_id': feed.userid,
         u'book_id':  feed.book_id,
     }
-    
+
     db.collection(u'newsfeed').add(data)
     return {"code": 202, "data": feed}
 
