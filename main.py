@@ -24,8 +24,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# cred = credentials.ApplicationDefault()
-cred = credentials.Certificate('charaka-kapi.json')
+cred = credentials.ApplicationDefault()
+# cred = credentials.Certificate('charaka-kapi.json')
 firebase_admin.initialize_app(cred, {
     'projectId':  'charaka'
 })
@@ -42,7 +42,7 @@ class Feed(BaseModel):
 
 @app.get("/")
 def main_func():
-    return {"desc": "This is Api for charaka deploy in cloud function,"}
+    return {"desc": "This is Api for charaka deploy in cloud function"}
 
 # user api
 # @app.get("/users/{user_id}")
@@ -51,9 +51,8 @@ def main_func():
 #   return {"user_id": user_id, "docs": docs }
 
 # # book api; non firebase
-@app.get("/books/25663888")
+@app.get("/books/2767052")
 def get_book_database():
-
   docs = {
       "id": 1,
       "book_id": 2767052,
@@ -79,7 +78,7 @@ def get_book_database():
       "image_url": "https://images.gr-assets.com/books/1447303603m/2767052.jpg",
       "small_image_url": "https://images.gr-assets.com/books/1447303603s/2767052.jpg"
   },
-  return {"book_id": '25663888', "doc": docs}
+  return {"book_id": '2767052', "doc": docs}
 
 
 @app.get("/books")
@@ -128,19 +127,18 @@ def get_feed_firebase():
 
     return {"status": 200, "docs": lis}
 
+# @app.get("/feedbyid")
+# def get_feed_firebase():
+#   # docs = db.collection(u'newsfeed').document(u'4JH3zzZ3ji9QuZp1ThFV').get()
+#   # bookdoc = db.collection(u'books').where(u'book_id', u'==', u'25663888').get()
+#   # bookdoc = bookdoc[0]
 
-@app.get("/feedbyid")
-def get_feed_firebase():
-  # docs = db.collection(u'newsfeed').document(u'4JH3zzZ3ji9QuZp1ThFV').get()
-  # bookdoc = db.collection(u'books').where(u'book_id', u'==', u'25663888').get()
-  # bookdoc = bookdoc[0]
 
-
-  return {
-    "status": 200,
-    "docs": docs,
-  # "bookdoc": bookdocss
-  }
+#   return {
+#     "status": 200,
+#     "docs": docs,
+#   # "bookdoc": bookdocss
+#   }
 
 
 # prediction api
