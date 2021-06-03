@@ -102,9 +102,9 @@ def post_feed_firebase(feed: Feed):
         u'title': feed.title,
         u'description': feed.desc,
         u'user_id': feed.userid,
-        u'book_id':  feed.book,
+        u'book_id':  feed.book_id,
     }
-
+    
     db.collection(u'newsfeed').add(data)
     return {"code": 202, "data": feed}
 
@@ -141,7 +141,7 @@ def get_feed_firebase():
 #   }
 
 
-# prediction api
+# # prediction api
 @app.get("/predictions")
 def get_book_prediction():
 
