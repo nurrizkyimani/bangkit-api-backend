@@ -150,7 +150,7 @@ def get_book_prediction():
     books = pd.read_csv(url_books)
     book_data = np.array(list(set(rating.book_id)))
     user = np.array([100 for i in range(len(book_data))])
-    model = keras.models.load_model('../bangkit-api-backend')
+    model = keras.models.load_model('models')
     model.summary()
 
     predictions = model.predict([[user], [book_data]])
