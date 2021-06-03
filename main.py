@@ -9,7 +9,6 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from tensorflow import keras
 import numpy as np
-import googleapiclient.discovery
 import pandas as pd
 
 app = FastAPI()
